@@ -1,14 +1,13 @@
-run= "sh run.sh"
-print(3.14, int(3.14))
-print(3.9999, int(3.9999))       # This doesn't round to the closest int!
-print(3.0, int(3.0))
-print(-3.999, int(-3.999))        # Note that the result is closer to zero
+#5. 
+word1="All"
+word2="work"
+word3="and"
+word4="no"
+word5="play"
+word6="makes"
+word7="Jack"
+word8="a"
+word9="dull"
+word10="boy."
 
-print("2345", int("2345"))        # parse a string to produce an int
-print(17, int(17))                # int even works on integers
-print(int("23bottles"))
-print(float("123.45"))
-print(type(float("123.45")))
-print(str(17))
-print(str(123.45))
-print(type(str(123.45)))
+print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)

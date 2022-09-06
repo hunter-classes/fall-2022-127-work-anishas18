@@ -1,0 +1,11 @@
+import turtle
+wn = turtle.Screen()
+squirt = turtle.Turtle()
+squirt.forward(50)
+squirt.left(120)
+squirt.forward(50)
+squirt.left(120)
+squirt.forward(50)
+squirt.left(120)
+wn.exitonclick()
+wn.mainloop()
