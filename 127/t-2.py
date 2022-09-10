@@ -11,6 +11,5 @@ crush.right(50)
 crush.forward(70)
 
 
-
 wn.exitonclick()
 wn.mainloop()
