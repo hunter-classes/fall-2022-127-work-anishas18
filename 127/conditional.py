@@ -68,7 +68,7 @@ print(isRightAngle2(5,3,4))
 #isolaqte the first letter than make it upper case put it in new string return find the last name capitalize it add it to the result string 
 
 def initilize (first,last):
-    return (first_and_last
+    return (first_and_last)
             
  #isolate the first letter
 
