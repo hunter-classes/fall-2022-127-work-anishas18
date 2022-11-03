@@ -1,35 +1,32 @@
-verbs = []
-for i in range(2):
-  verb='ate','walked','slept'
-  verbs.append(verb)
+#completed two extra 
+#1. Instead of specifying the sentences or story to convert, write a story in a file and read it from your program. 
+#2. Add some replacements that are unique, that is, the first time you see them you select one randomly but then you keep reusing that replacement.
 
-nouns = []
-for i in range(2):
-  noun='dog','hammer','cat','car','frog'
-  nouns.append(noun)
-  
+f = open('story.dat')    #reading story (extra 1)
+story = f.read()
+print(story)
 
-print(f"Sam {verb[0]} the {noun[0]} and then {verb[1]} the {noun[1]} later.")
+print("------------------------")
 
+import random
 
+hero = ['madlib','sam','sarah']    #extra 2
+noun = ['Olivia','Emma','Noah','School','story','chair','college']
+verb = ['hunter','city','funny','ate','cried','put']
 
-#####
-import random 
+def madlibs(story):
+  madlib = story
+  madlib = madlib.replace("<hero>",random.choice(hero))
+  madlib = madlib.replace("<noun>", random.choice(noun))
+  madlib = madlib.replace("<noun1>", random.choice(noun))
+  madlib = madlib.replace("<noun2>", random.choice(noun))
+  madlib = madlib.replace("<verb>", random.choice(verb))
+  madlib = madlib.replace("<verb1>", random.choice(verb))
+  madlib = madlib.replace("<verb2>", random.choice(verb))
+  madlib = madlib.replace("<verb3>", random.choice(verb))
+  madlib = madlib.replace("<verb4>", random.choice(verb))
+  return madlib
 
-verbs = ['ate','walked','slept']
-value = random.choice(verbs)
-for i in range(2):
-  verb='ate','walked','slept'
-  verbs.append(verb)
-value = random.choice(verbs)
-
-nouns = ['dog','hammer','cat','car','frog']
-value2 = random.choice(nouns)
-for i in range(2):
-  noun='dog','hammer','cat','car','frog'
-  nouns.append(noun)
-value2 = random.choice(nouns)
-
+print(madlibs(story))
 
 
-print(f" Sam " + value + " " "the " + value2 +  " " "and then" " " + value +  " " "the " + value2 + " " "later.")
