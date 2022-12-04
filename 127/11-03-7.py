@@ -11,9 +11,9 @@ d['list'] = 55.3
 print(d)
 
 
-person = {'first' : "John",
-          'last' : "Smith",
-          'age' : 50}
+person = {'first': "John",
+          'last': "Smith",
+          'age': 50}
 person['age'] = person['age'] + 1
 
 print(person
