@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.dataframe = pd.read_csv('countries.csv')
     pkgs.python38Full
   ];
   env = {
